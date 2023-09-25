@@ -8,11 +8,9 @@ public class PemilihanPercobaan126 {
 
         System.out.print("Masukkan angka: ");
         int angka = input26.nextInt();
+
+        String result = (angka%2==0) ? "Genap":"Ganjil";
+        System.out.println(result);
         
-        if (angka %2 == 0) {
-            System.out.println("Angka "+angka+" bilangan genap");
-        } else {
-            System.out.println("Angka "+angka+" bilangan ganjil");
-        }
     }
 }
