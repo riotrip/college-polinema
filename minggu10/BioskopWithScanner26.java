@@ -24,18 +24,20 @@ public class BioskopWithScanner26 {
                         scan.nextLine();
                         System.out.print("Masukkan nama: ");
                         nama = scan.nextLine();
-                        System.out.print("Masukkan baris: ");
-                        baris = scan.nextInt();
-                        System.out.print("Masukkan kolom: ");
-                        kolom = scan.nextInt();
-                        scan.nextLine();
-
-                        if (penonton[baris - 1][kolom - 1] == null) {
-                            penonton[baris - 1][kolom - 1] = nama;
-                        } else {
-                            System.out.println("Baris dan kolom kursi sudah terisi");
+                        boolean kursi = false;
+                        while (!kursi) {
+                            System.out.print("Masukkan baris: ");
+                            baris = scan.nextInt();
+                            System.out.print("Masukkan kolom: ");
+                            kolom = scan.nextInt();
+                            scan.nextLine();
+                            if (penonton[baris - 1][kolom - 1] == null) {
+                                penonton[baris - 1][kolom - 1] = nama;
+                                kursi = true;
+                            } else {
+                                System.out.println("Baris dan kolom kursi sudah terisi");
+                            }
                         }
-
                         System.out.print("Input penonton lainnya? (y/n): ");
                         next = scan.next();
 
