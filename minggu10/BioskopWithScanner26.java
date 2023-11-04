@@ -46,7 +46,19 @@ public class BioskopWithScanner26 {
                     break;
                 case 2:
                     for (int i = 0; i < penonton.length; i++) {
-                        System.out.println("Penonton pada baris ke-" + (i + 1) + ": " + String.join(", ", penonton[i]));
+                        System.out.print("Penonton pada baris ke-" + (i + 1) + ": ");
+                        for (int j = 0; j < penonton[0].length; j++) {
+                            if (penonton[i][j] != null) {
+                                System.out.print(penonton[i][j]);
+                            } else {
+                                System.out.print("***");
+                            }
+
+                            if (j < penonton[0].length - 1) {
+                                System.out.print(", ");
+                            }
+                        }
+                        System.out.println();
                     }
                     break;
                 case 3:
