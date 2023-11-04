@@ -30,7 +30,11 @@ public class BioskopWithScanner26 {
                         kolom = scan.nextInt();
                         scan.nextLine();
 
-                        penonton[baris - 1][kolom - 1] = nama;
+                        if (penonton[baris - 1][kolom - 1] == null) {
+                            penonton[baris - 1][kolom - 1] = nama;
+                        } else {
+                            System.out.println("Baris dan kolom kursi sudah terisi");
+                        }
 
                         System.out.print("Input penonton lainnya? (y/n): ");
                         next = scan.next();
