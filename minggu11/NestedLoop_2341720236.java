@@ -8,7 +8,7 @@ public class NestedLoop_2341720236 {
         double[][] array = new double[5][7];
 
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Kota ke-" + i);
+            System.out.println("Kota ke-" + (i + 1));
             for (int j = 0; j < array[0].length; j++) {
                 System.out.print("Hari ke-" + (j + 1) + ": ");
                 array[i][j] = scan.nextDouble();
@@ -16,12 +16,14 @@ public class NestedLoop_2341720236 {
             System.out.println();
         }
 
-        for (int i = 0; i < array.length; i++) {
+        int i = 1;
+        for (double[] kota : array) {
             System.out.println("Kota ke-" + i);
-            for (int j = 0; j < array[0].length; j++) {
-                System.out.print(array[i][j] + " ");
+            for (double hari : kota) {
+                System.out.println(hari + " ");
             }
             System.out.println();
+            i++;
         }
     }
 }
