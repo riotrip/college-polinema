@@ -14,10 +14,15 @@ public class Quiz26 {
             int number = random.nextInt(10) + 1;
             boolean success = false;
             do {
-                System.out.println("Tebak angka (1-10): ");
+                System.out.print("Tebak angka (1-10): ");
                 int answer = scan.nextInt();
                 scan.nextLine();
                 success = (answer == number);
+                if (answer < number) {
+                    System.out.println("Nilai input lebih kecil dari jawaban");
+                } else if (answer > number) {
+                    System.out.println("Nilai input lebih besar dari jawaban");
+                }
             } while (!success);
             System.out.println("Apakah anda ingin mengulang permainan (Y/y)?");
             menu = scan.nextLine().charAt(0);
