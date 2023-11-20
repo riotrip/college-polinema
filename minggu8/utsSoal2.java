@@ -1,3 +1,5 @@
+package minggu8;
+
 import java.util.Scanner;
 
 public class utsSoal2 {

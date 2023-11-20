@@ -1,3 +1,5 @@
+package minggu2;
+
 public class identitas26 {
     public static void main(String[] args) {
         System.out.println("***** IDENTITAS DIRI *****");
