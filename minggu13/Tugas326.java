@@ -2,7 +2,7 @@ package minggu13;
 
 import java.util.Scanner;
 
-public class Tugas226 {
+public class Tugas326 {
     static void inputNilai(int[][] nilai, String[] nama) {
         Scanner scan = new Scanner(System.in);
         for (int i = 0; i < nilai.length; i++) {
