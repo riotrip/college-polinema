@@ -2,7 +2,7 @@ package minggu14;
 
 import java.util.Scanner;
 
-public class Percobaan3 {
+public class Percobaan326 {
     static double hitungLaba(double saldo, int tahun) {
         if (tahun == 0) {
             return (saldo);

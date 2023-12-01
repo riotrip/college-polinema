@@ -2,7 +2,7 @@ package minggu14;
 
 import java.util.Scanner;
 
-public class Percobaan2 {
+public class Percobaan226 {
     static int hitungPangkat(int x, int y) {
         if (y == 0) {
             System.out.print(1 + " = ");
