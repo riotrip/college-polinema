@@ -1,10 +1,10 @@
 package minggu2;
 
 public class Buku26 {
-    static String judul, pengarang;
-    static int halaman, stok, harga;
+    String judul, pengarang;
+    int halaman, stok, harga;
 
-    static void tampilInformasi() {
+    void tampilInformasi() {
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: " + pengarang);
         System.out.println("Jumlah halaman: " + halaman);
@@ -26,8 +26,5 @@ public class Buku26 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
-    }
-    public static void main(String[] args) {
-        tampilInformasi();
     }
 }
