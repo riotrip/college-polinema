@@ -39,5 +39,4 @@ public class Buku26 {
         this.stok = stok;
         harga = har;
     }
-
 }
