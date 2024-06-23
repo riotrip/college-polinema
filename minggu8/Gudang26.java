@@ -42,6 +42,7 @@ public class Gudang26 {
             Barang26 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");
@@ -72,4 +73,46 @@ public class Gudang26 {
         }
     }
 
+    public String konversiDesimalKeBiner(int kode) {
+        StackKonversi26 stack = new StackKonversi26();
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+
+    public Barang26 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang26 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah: " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
+
+    public Barang26 cariBarang(String cari) {
+        if (!cekKosong()) {
+            for (int i = top; i >= 0; i--) {
+                Barang26 barang = tumpukan[i];
+                if (barang.nama.equalsIgnoreCase(cari) || String.valueOf(barang.kode).equals(cari)) {
+                    System.out.printf("Barang ditemukan: %s (Kode: %d, Kategori: %s)\n", barang.nama, barang.kode,
+                            barang.kategori);
+                    return barang;
+                }
+            }
+            System.out.println("Barang tidak ditemukan.");
+            return null;
+        } else {
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
 }
