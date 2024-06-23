@@ -1,0 +1,23 @@
+UTS Praktikum Algoritma dan Struktur Data
+Kelas TI 1A
+Waktu : 90 menit 
+
+no urut ganjil mengerjakan soal A dan genap soal B
+
+A. Klinik Dokter
+B. Alat Pesta (persewaan)
+
+buatlah program membuat sebuah sistem (sub sistem) dengan fitur
+1. menampilkan deret data berdasarkan salah satu atribut dengan urut ascending/descending
+2. pencarian salah satu atribut dalam deret data yang ada 
+
+ketentuan :
+- diagram class digambarkan 
+- atribut bebas minimal 3 data
+- algoritma/metode sorting dan searching bebas
+- semua nama atribut atau variabel yang digunakan tambahan no urut di belakangnya (contoh no urut 99 : namaMhs99)
+
+kumpulkan laporan UTS dengan format seperti laporan hasil praktikum
+jika belum berhasil tuliskan keterangan masih ada error atau program berjalan belum sesuai
+upload ke : https://drive.google.com/drive/folders/1LoK0K5Knq-7JcTb6ytLWocSoGk_ic1P0?usp=sharing
+
